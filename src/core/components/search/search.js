@@ -20,7 +20,7 @@ function Search(props) {
     }
 
     const getTitle = () => {
-        console.log(messages)
+        
         if(pageType === 'all')
             return messages.product.all;
 

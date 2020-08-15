@@ -3,7 +3,7 @@ import axios from 'axios';
 class Http {
 	constructor() {
 		this.instanceAxios = axios.create({
-			baseURL: 'http://www.mocky.io/v2'
+			baseURL: 'https://www.mocky.io/v2'
 		});
 	}
 
