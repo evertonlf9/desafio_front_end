@@ -21,7 +21,7 @@ Everton Ferreira
 O objetivo do projeto é teste de programação
 
 ## Internacionalização do Projeto
-Pode ser usado criando um cookie ou um item no local storage chamado language com os seguintes valores pt en ou es
+Pode ser usado criando um cookie ou um item no local storage chamado language com os seguintes valores pt, en ou es
 
 ### Tecnologias
 - HTML5
