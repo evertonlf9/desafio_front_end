@@ -1,0 +1,90 @@
+@import '../../assets/scss/variables';
+
+h3 {
+    display: flex;
+
+    span {
+        margin-left: 1rem;
+        font-size: 13px;
+        margin-top: 3px;
+        color: #8E879E;
+    }
+
+    p {
+        font-size: 18px;
+        color: #5E3BA5;
+        font-weight: 700;
+    }
+
+    [role='switch'] {
+        min-width: 26px;
+        position: relative;
+        right: auto;
+        height: 10px;
+        margin: 9px 0;
+        width: 26px;
+        left: 0;
+
+        .ant-switch-handle {
+            height: 8px;
+            top: 1px;
+            left: 1px;
+            width: 8px;
+        }
+    }
+
+    .ant-switch-checked {
+        .ant-switch-handle {
+            left: calc(100% - 10px - 0px);
+        }
+    }
+}
+
+.anticon-rollback {
+    font-size: 40px;
+    margin-left: 3rem;
+    cursor: pointer;
+}
+
+.content-body {
+    display: flex;
+    margin: 0 3rem;
+
+    .ant-card {background: transparent;} 
+
+    .ant-card-body {
+        display: none;
+    }
+
+    .description {
+        margin: 0 3rem;
+    }
+}
+
+.content-footer {
+    margin: 0 3rem;
+}
+
+
+.item-tag {
+    position: absolute;
+    right: -1px;
+    padding: 3px 2rem;        
+    color: #fff;
+    bottom: 0;
+}
+
+.item-tag-exclusive {background-image: linear-gradient(to right, #1c98cd , #1949ca);}
+.item-tag-promotion {background-image: linear-gradient(to right, #cb0f66 , #791083);}
+
+@media screen and (max-width: $break-large) {
+    .content-body {
+        flex-wrap: wrap; 
+        justify-content: center;
+        margin: 0 0 !important;
+    }
+
+    .description {
+        margin: 2rem 3rem !important;
+    }
+}

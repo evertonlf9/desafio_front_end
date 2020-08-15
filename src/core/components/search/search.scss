@@ -1,0 +1,27 @@
+.container-header {
+    margin-left: 3rem;
+    padding: 2rem 0;
+
+    h4 {
+        color: #8E879E;
+    }
+
+    .search-item {
+        border-radius: 30px;
+        width: 65%;
+        right: 6px;
+        height: 45px;
+        float: right;
+        margin-right: 3rem;
+        font-size: 18px;
+
+        .anticon-search {
+            border-right: 1px solid #d1d1d1;
+            font-size: 21px;
+
+            svg {
+                margin-right: 10px;
+            }
+        }
+    }
+}
