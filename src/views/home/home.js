@@ -16,7 +16,7 @@ const { Content } = Layout;
 const Home = (props) => {
     const [searchName, setSearchName] = useState('');
     const {getDataApi, data, pageType, setFavorite, loading} = props;
-
+    
     useEffect(() => {  
       if(!data)  
         getDataApi();

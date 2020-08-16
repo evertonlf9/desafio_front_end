@@ -35,6 +35,7 @@ function CardComp(props) {
                 if(type === "all" || item[type])
                     return (
                         <Card
+                            data-testid={`card-${id}`}
                             key={id}
                             hoverable
                             style={{ width: 362 }}

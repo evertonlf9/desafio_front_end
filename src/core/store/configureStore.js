@@ -7,7 +7,7 @@ import createRootReducer from './ducks';
 import rootSaga from './sagas';
 
 export const history = createBrowserHistory({
-	basename: process.env.PUBLIC_URL
+	basename: process.env.PUBLIC_URL || '/'
 });
 
 const sagaMiddleware = createSagaMiddleware();

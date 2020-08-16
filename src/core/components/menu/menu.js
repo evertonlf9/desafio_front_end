@@ -37,24 +37,24 @@ function MenuComp(props) {
                     <img alt="" src="../../../assets/img/code.png" />
                 </div>
                 <Menu theme="dark" mode="inline" defaultSelectedKeys={['all']}>
-                    <Menu.Item key="all" onClick={handlerClick} onKeyPress={(e)=>handlerKeyPress(e, {key: 'all'})} tabIndex="0">
+                    <Menu.Item key="all" data-testid="menu-all" onClick={handlerClick} onKeyPress={(e)=>handlerKeyPress(e, {key: 'all'})} tabIndex="0">
                         <img alt="" src="../../../assets/img/supplices.png" />
                         <span>{messages.general.all}</span>
                     </Menu.Item>
-                    <Menu.Item key="exclusivo" onClick={handlerClick} onKeyPress={(e)=>handlerKeyPress(e, {key: 'exclusivo'})} tabIndex="0">
+                    <Menu.Item key="exclusivo" data-testid="menu-exclusivo" onClick={handlerClick} onKeyPress={(e)=>handlerKeyPress(e, {key: 'exclusivo'})} tabIndex="0">
                         <img alt="" src="../../../assets/img/box.png" />
                         <span>{messages.general.exclusive}</span>
                     </Menu.Item>
-                    <Menu.Item key="promocao" onClick={handlerClick} onKeyPress={(e)=>handlerKeyPress(e, {key: 'promocao'})} tabIndex="0">
+                    <Menu.Item key="promocao" data-testid="menu-promocao" onClick={handlerClick} onKeyPress={(e)=>handlerKeyPress(e, {key: 'promocao'})} tabIndex="0">
                         <img alt="" src="../../../assets/img/gift-box.png"/>
                         <span>{messages.general.promotion}</span>
                     </Menu.Item>
-                    <Menu.Item key="favorito" onClick={handlerClick} onKeyPress={(e)=>handlerKeyPress(e, {key: 'favorito'})} tabIndex="0">
+                    <Menu.Item key="favorito" data-testid="menu-favorito" onClick={handlerClick} onKeyPress={(e)=>handlerKeyPress(e, {key: 'favorito'})} tabIndex="0">
                         <img alt="" src="../../../assets/img/like.png" />
                         <span>{messages.general.favorite}</span>
                     </Menu.Item>
                 </Menu>
-                <div className="logo-footer">
+                <div className="logo-footer" data-testid="menu-footer">
                     <img alt="" src="../../../assets/img/finch.png" />
                 </div>
             </Sider>
